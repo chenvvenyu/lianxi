@@ -10,6 +10,126 @@
     display: flex;
     flex-direction: column;
 }
+a{
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+    font-size: 14px;
+}
 .headerTop{
     width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f2f2f2;
+    z-index: 100;
+}
+.logo{
+    width: 50px;
+    height: 44px;
+    background-image: url(../img/calculator.png);
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+}
+.user{
+    width: 50px;
+    height: 44px;
+    background-image: url(../img/calculator.png);
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+}
+.search{
+    flex: 1;
+    height: 33px;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    border-radius: 5px;
+}
+.search .icon{
+    width: 31px;
+    height: 31px;
+    background-image: url(../img/icon-test.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+.search input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.header .headerNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .headerNav>a{
+    align-self: stretch;
+}
+.header .headerNav>a.active{
+    border-bottom: 2px solid rgb(237,91,0);
+    color: #ff6700;
+}
+.header .xhicon{
+    width: 20px;
+    height: 31px;
+    background-image: url(../img/icon-test_2.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 20px;
+    position: relative;
+    z-index: 100;
+    transition: transform 0.5s;
+}
+.xhk{
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top:44px;
+    z-index: 10;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+#choose:checked~ .xhk{
+    height: 100%;
+}
+#choose:checked~ .xhicon{
+    transform: rotate(180deg);
+}
+.xhkMain{
+    width: 100%;
+    height: 130px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+.xhkMain .xhkTop{
+    height: 30px;
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+}
+.xhkMain .xhkList{
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 10px;
+    align-content: space-evenly;
+}
+.xhkMain .xhkList>a{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 12px 12px 0;
+    background-color: #ffffff;
+    border: 1px solid#e5e5e5;
+}
+.xhkMain .xhkList>a.active{
+    background-color: #fde0d5;
+    border: 1px solid #ff6700;
+    color: #ff6700;
 }
