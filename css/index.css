@@ -85,7 +85,7 @@ a{
 .xhk{
     width: 100%;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     position: fixed;
     top:44px;
     z-index: 10;
@@ -132,4 +132,30 @@ a{
     background-color: #fde0d5;
     border: 1px solid #ff6700;
     color: #ff6700;
+}
+
+/* 底部 */
+.footer{
+    width: 100%; 
+    height: 52px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+.footer .fIcon{
+    width: 25%;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footer .fIcon .img{
+    width: 21px;
+    height: 21px;
+    background-size: 100%;
+    background-image: url(../img/我的.png);
+}
+.footer .fIcon .img.active{
+    background-image: url(../img/我的1.png);
 }
